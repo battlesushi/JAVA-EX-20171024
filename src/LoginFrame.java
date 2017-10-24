@@ -26,8 +26,8 @@ public class LoginFrame extends JFrame{
         cp.add(jlbPW);
         jlbPW.setHorizontalAlignment(jlbID.RIGHT);
         cp.add(jtfPW);
-        cp.add(jbtnLogin);
         cp.add(jbtnExit);
+        cp.add(jbtnLogin);
         jbtnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -46,7 +46,9 @@ public class LoginFrame extends JFrame{
                 System.exit(0);
             }
         });
-
-
+    }
+    public void reset(){
+        jtfID.setText("");
+        jtfPW.setText("");
     }
 }
